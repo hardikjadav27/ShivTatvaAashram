@@ -1,0 +1,146 @@
+.footer {
+  background: linear-gradient(135deg, #fff5e6, #fff8f0);
+  color: #4e342e;
+  font-family: "Poppins", sans-serif;
+  padding: 50px 8% 20px;
+  border-top: 2px solid #f5c16c;
+}
+
+/* Container */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+/* Footer Section */
+.footer-section {
+  flex: 1;
+  min-width: 250px;
+  text-align: left;
+}
+
+/* Titles */
+.footer-section h3 {
+  color: #b55b1f;
+  margin-bottom: 15px;
+  font-weight: 600;
+  position: relative;
+}
+
+.footer-section h3::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 2px;
+  background-color: #f39c12;
+  margin-top: 6px;
+  border-radius: 2px;
+}
+
+/* Form */
+.quick-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.quick-form label {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  color: #5a4633;
+}
+
+.quick-form input {
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 6px;
+  border: 1px solid #d8b890;
+  outline: none;
+  transition: 0.3s;
+}
+
+.quick-form input:focus {
+  border-color: #ff9800;
+  box-shadow: 0 0 4px #ffcc80;
+}
+
+.quick-form button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #f39c12;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.quick-form button:hover {
+  background-color: #e68900;
+  transform: scale(1.05);
+}
+
+/* Links */
+.quick-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.quick-links ul li {
+  margin: 8px 0;
+}
+
+.quick-links ul li a {
+  text-decoration: none;
+  color: #4e342e;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.quick-links ul li a:hover {
+  color: #e65100;
+}
+
+/* Contact */
+.contact-details p {
+  margin: 6px 0;
+  font-size: 0.95rem;
+}
+
+.contact-details a {
+  text-decoration: none;
+  color: #d35400;
+  transition: color 0.3s ease;
+}
+
+.contact-details a:hover {
+  color: #e65100;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  border-top: 1px solid #f1d1a2;
+  padding-top: 15px;
+  font-size: 0.9rem;
+  color: #5a4633;
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-section {
+    text-align: center;
+  }
+
+  .footer-section h3::after {
+    margin: 6px auto;
+  }
+}
