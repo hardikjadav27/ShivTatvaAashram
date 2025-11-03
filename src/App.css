@@ -9,14 +9,15 @@
 }
 
 body {
-  background-color: #fff;
-  color: #222;
+  background-color: #fffdf7; /* very light cream */
+  color: #3b2f2f;
   overflow-x: hidden;
 }
 
 /* Responsive sections */
 section {
-  padding: 40px 8%;
+  background-color: #eeddad1a; /* subtle beige tint */
+  padding: 60px 20px;
 }
 
 /* Images */

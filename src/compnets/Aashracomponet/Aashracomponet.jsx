@@ -7,6 +7,7 @@ import Donations from "../Donations/Donations";
 import Celebrations from "../Celebrations/Celebrations";
 import Footer from "../Footer/Footer";
 import Religion from "../Religion/Religion";
+import ShivTattvaShopSection from "../ShivTattvaShopSection/ShivTattvaShopSection";
 
 const Aashracomponet = () => {
   return (
@@ -17,6 +18,7 @@ const Aashracomponet = () => {
       <Initiatives />
       <Donations />
       <Religion />
+      <ShivTattvaShopSection />
       <Celebrations />
       <Footer />
     </div>

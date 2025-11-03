@@ -58,6 +58,7 @@ const PhotoSlideshow = () => {
   return (
     <section
       className="hero-section"
+      id="home"
       aria-label="Promotional Hero Section"
       style={{ backgroundImage: `url(${images[currentIndex]})` }}
     >

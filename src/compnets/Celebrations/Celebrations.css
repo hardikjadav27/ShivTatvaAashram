@@ -2,17 +2,19 @@
   text-align: center;
   font-family: "Poppins", sans-serif;
   padding: 60px 8%;
-  background: linear-gradient(135deg, #fff9f3, #fff4e0);
-  color: #3e2723;
+  background: linear-gradient(135deg, #fffaf0, #f7efd2); /* soft golden-beige */
+  color: #3b2f2f;
 }
 
 /* Title */
 .celebrations-container h2 {
   font-size: 2rem;
-  color: #b55b1f;
+  color: #5a2d0c; /* deep earthy brown */
   margin-bottom: 10px;
   font-weight: 600;
   position: relative;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .celebrations-container h2::after {
@@ -20,7 +22,7 @@
   display: block;
   width: 80px;
   height: 3px;
-  background-color: #ff9800;
+  background-color: #eab82e; /* divine gold underline */
   margin: 8px auto;
   border-radius: 2px;
 }
@@ -29,9 +31,9 @@
 .celebrations-intro {
   max-width: 750px;
   margin: 0 auto 40px;
-  color: #5a4633;
+  color: #4a3b2a;
   font-size: 1rem;
-  line-height: 1.6;
+  line-height: 1.7;
 }
 
 /* Grid Container */
@@ -46,15 +48,16 @@
 .celebration-card {
   background-color: #fff;
   border-radius: 14px;
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 14px rgba(90, 45, 12, 0.15);
   max-width: 330px;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-top: 5px solid #eab82e; /* golden accent line */
 }
 
 .celebration-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 24px rgba(255, 153, 0, 0.3);
+  transform: translateY(-6px);
+  box-shadow: 0 12px 22px rgba(234, 184, 46, 0.4); /* golden glow */
 }
 
 /* Image */
@@ -71,29 +74,35 @@
 }
 
 .celebration-content h3 {
-  font-size: 1.4rem;
-  color: #d35400;
+  font-size: 1.3rem;
+  color: #b5761e; /* golden brown tone */
   margin-bottom: 8px;
 }
 
 .celebration-content p {
-  color: #5a4633;
+  color: #4a3b2a;
   font-size: 0.95rem;
-  line-height: 1.5;
-  margin-bottom: 15px;
+  line-height: 1.6;
+  margin-bottom: 18px;
 }
 
 /* Link Button */
 .read-more {
-  color: #e65100;
+  display: inline-block;
+  color: #fff;
+  background-color: #eab82e;
+  padding: 8px 16px;
+  border-radius: 6px;
   text-decoration: none;
-  font-weight: 600;
-  font-size: 0.95rem;
-  transition: color 0.3s ease;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
 }
 
 .read-more:hover {
-  color: #ff6f00;
+  background-color: #c97b2e; /* deeper gold hover */
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(234, 184, 46, 0.3);
 }
 
 /* ✅ Responsive Design */
@@ -110,5 +119,9 @@
 
   .celebrations-container h2 {
     font-size: 1.6rem;
+  }
+
+  .celebration-content {
+    text-align: center;
   }
 }

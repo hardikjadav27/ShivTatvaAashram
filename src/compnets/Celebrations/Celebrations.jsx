@@ -66,7 +66,7 @@ const Celebrations = () => {
   ];
 
   return (
-    <section className="celebrations-container">
+    <section className="celebrations-container" id="programs">
       <h2>Festivals & Celebrations at Our Ashram</h2>
       <p className="celebrations-intro">
         Each festival at the Ashram is celebrated with devotion, joy, and unity.

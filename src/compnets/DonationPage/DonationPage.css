@@ -1,0 +1,207 @@
+/* ================================
+   Global Styles
+================================ */
+.donation-container {
+  background: linear-gradient(180deg, #fffaf0 0%, #f0e7dc 100%);
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  color: #222;
+  overflow-x: hidden;
+}
+
+/* ================================
+   Hero Section
+================================ */
+.donation-hero {
+  position: relative;
+  height: 100vh;
+  background-image: url("https://images.unsplash.com/photo-1509099836639-18ba1795216d?auto=format&fit=crop&w=1500&q=80");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.donation-image {
+  display: none;
+}
+
+.donation-text {
+  color: #fff;
+  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
+  width: 90%;
+  max-width: 800px;
+  padding: 0 15px;
+}
+
+.donation-text h1 {
+  font-size: 3rem;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.donation-text p {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  line-height: 1.6;
+  color: #f2f2f2;
+}
+
+/* Responsive Hero Text */
+@media (max-width: 768px) {
+  .donation-text h1 {
+    font-size: 2rem;
+  }
+  .donation-text p {
+    font-size: 1rem;
+  }
+}
+
+/* ================================
+   Help Section
+================================ */
+.help-section {
+  padding: 80px 20px;
+  background: #fff;
+}
+
+.help-section h2 {
+  font-size: 2.2rem;
+  color: #3c2a21;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+}
+
+.help-section p {
+  max-width: 750px;
+  margin: 0 auto;
+  color: #555;
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+/* ================================
+   Flip Card Section
+================================ */
+.flip-card {
+  margin: 60px auto;
+  width: 320px;
+  height: 420px;
+  perspective: 1000px;
+  transition: all 0.3s ease;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.8s ease;
+}
+
+/* Flip Animation */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Card Sides */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  backface-visibility: hidden;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+
+/* Front Side */
+.flip-card-front {
+  background: #fff;
+}
+
+.flip-card-front img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.flip-card:hover .flip-card-front img {
+  transform: scale(1.05);
+}
+
+.front-text {
+  position: absolute;
+  bottom: 15%;
+  left: 0;
+  width: 100%;
+  color: white;
+  text-shadow: 0 3px 8px rgba(0, 0, 0, 0.8);
+  padding: 0 10px;
+}
+
+.front-text h3 {
+  font-size: 1.5rem;
+  margin-bottom: 6px;
+}
+
+.front-text p {
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+}
+
+/* Back Side */
+.flip-card-back {
+  background: linear-gradient(135deg, #fff5e4, #fdf1d6);
+  color: #3c2a21;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.flip-card-back img {
+  width: 180px;
+  height: 180px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: 2px solid #d9b47c;
+}
+
+.flip-card-back p {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #4b2e05;
+}
+
+/* Hover Glow Effect */
+.flip-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* ================================
+   Responsive Adjustments
+================================ */
+@media (max-width: 768px) {
+  .flip-card {
+    width: 90%;
+    height: 360px;
+  }
+
+  .help-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .flip-card-back img {
+    width: 150px;
+    height: 150px;
+  }
+}

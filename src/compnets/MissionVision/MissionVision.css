@@ -1,14 +1,16 @@
 .missionvision-section {
   text-align: center;
-  padding: 50px 8%;
-  background: linear-gradient(135deg, #f8f9fa, #f1f7f3);
+  padding: 60px 8%;
+  background: linear-gradient(135deg, #fffaf0, #f7efd2); /* beige tone */
 }
 
 .section-title {
   font-size: 2rem;
-  font-weight: 600;
-  color: #2c3e50;
-  margin-bottom: 30px;
+  font-weight: 700;
+  color: #5a2d0c; /* deep spiritual brown */
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .missionvision-container {
@@ -18,23 +20,23 @@
   gap: 2%;
 }
 
-/* ✨ Updated card color palette */
+/* ✨ Card Styling */
 .missionvision-card {
   width: 28%;
   background-color: #ffffff;
   border-radius: 12px;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
-  border-top: 4px solid #4caf50; /* Calm green accent */
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-top: 5px solid #eab82e; /* golden accent */
+  box-shadow: 0px 4px 12px rgba(90, 45, 12, 0.15);
+  transition: all 0.3s ease;
 }
 
 .missionvision-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 8px 18px rgba(234, 184, 46, 0.4); /* golden glow */
 }
 
 .missionvision-content {
-  padding: 20px;
+  padding: 25px 20px;
   line-height: 1.6;
   text-align: left;
 }
@@ -42,12 +44,12 @@
 .missionvision-content h3 {
   font-size: 1.4rem;
   margin-bottom: 10px;
-  color: #00695c; /* Teal for calmness */
+  color: #5a2d0c; /* dark brown title */
 }
 
 .missionvision-content p {
-  color: #444;
-  font-size: 0.95rem;
+  color: #3b2f2f;
+  font-size: 1rem;
 }
 
 /* ✅ Responsive Design */
@@ -60,7 +62,7 @@
 @media (max-width: 768px) {
   .missionvision-card {
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
   }
 
   .missionvision-content {

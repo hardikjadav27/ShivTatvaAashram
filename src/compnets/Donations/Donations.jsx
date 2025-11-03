@@ -1,7 +1,10 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./Donations.css";
 
 const Donations = () => {
+  const navigate = useNavigate();
+
   const donations = [
     {
       id: 1,
@@ -22,7 +25,7 @@ const Donations = () => {
   ];
 
   return (
-    <section className="donations-section">
+    <section className="donations-section" id="donations">
       <div className="donations-header">
         <h2>Compassion Creates Change</h2>
         <p>
@@ -36,7 +39,12 @@ const Donations = () => {
           <span>💚 Raised: ₹5,000</span>
         </div>
 
-        <button className="main-donate-btn">DONATE NOW</button>
+        <button
+          className="main-donate-btn"
+          onClick={() => navigate("/Donation")}
+        >
+          DONATE NOW
+        </button>
       </div>
 
       <div className="donation-cards">

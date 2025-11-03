@@ -33,7 +33,7 @@ const Initiatives = () => {
   ];
 
   return (
-    <section className="initiatives-section">
+    <section className="initiatives-section" id="activities">
       <h2 className="initiatives-title">Our Recent Initiatives</h2>
       <div className="initiatives-grid">
         {initiatives.map((item) => (

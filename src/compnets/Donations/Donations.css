@@ -1,31 +1,33 @@
-/* Section Container */
+/* ===== Section Container ===== */
 .donations-section {
-  background: linear-gradient(135deg, #f4f9f4, #e9f5e9);
+  background: linear-gradient(135deg, #fffaf0, #f7efd2); /* soft golden-beige */
   padding: 60px 8%;
   font-family: "Poppins", sans-serif;
   text-align: center;
 }
 
-/* Header */
+/* ===== Header ===== */
 .donations-header {
   margin-bottom: 50px;
 }
 
 .donations-header h2 {
   font-size: 2rem;
-  color: #2e4d38;
+  color: #5a2d0c; /* deep spiritual brown */
   margin-bottom: 15px;
-  font-weight: 600;
+  font-weight: 700;
   position: relative;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .donations-header h2::after {
   content: "";
   width: 80px;
   height: 3px;
-  background-color: #4caf50;
+  background-color: #eab82e; /* golden underline */
   display: block;
-  margin: 8px auto 0;
+  margin: 10px auto 0;
   border-radius: 2px;
 }
 
@@ -33,40 +35,42 @@
   max-width: 750px;
   margin: 0 auto 25px;
   font-size: 1rem;
-  color: #444;
-  line-height: 1.6;
+  color: #3b2f2f;
+  line-height: 1.7;
 }
 
-/* Goal Info */
+/* ===== Goal Info ===== */
 .goal-info {
   display: flex;
   justify-content: center;
   gap: 25px;
   font-size: 1.1rem;
-  color: #2e4d38;
+  color: #5a2d0c;
   font-weight: 500;
   margin-bottom: 25px;
 }
 
-/* Main Donate Button */
+/* ===== Main Donate Button (Top Section) ===== */
 .main-donate-btn {
-  background-color: #4caf50;
+  background-color: #eab82e;
   color: #fff;
   border: none;
-  padding: 14px 32px;
+  padding: 14px 34px;
   border-radius: 8px;
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(234, 184, 46, 0.3);
 }
 
 .main-donate-btn:hover {
-  background-color: #388e3c;
-  transform: scale(1.05);
+  background-color: #c97b2e; /* deeper golden */
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 6px 16px rgba(234, 184, 46, 0.5);
 }
 
-/* Cards Grid */
+/* ===== Cards Grid ===== */
 .donation-cards {
   display: flex;
   justify-content: center;
@@ -74,11 +78,12 @@
   gap: 25px;
 }
 
-/* Individual Card */
+/* ===== Individual Card ===== */
 .donation-card {
-  background-color: #fff;
+  background-color: #ffffff;
   border-radius: 14px;
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+  border-top: 5px solid #eab82e; /* golden accent line */
+  box-shadow: 0 6px 14px rgba(90, 45, 12, 0.15);
   width: 300px;
   padding: 25px 20px;
   text-align: center;
@@ -87,53 +92,57 @@
 
 .donation-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 12px 24px rgba(234, 184, 46, 0.4);
 }
 
 .donation-card h3 {
-  color: #00695c;
+  color: #5a2d0c;
   font-size: 1.3rem;
   margin-bottom: 10px;
+  font-weight: 600;
 }
 
 .donation-amount {
   font-size: 2.2rem;
-  color: #388e3c;
-  font-weight: 600;
+  color: #eab82e;
+  font-weight: 700;
   margin-bottom: 5px;
 }
 
 .per-month {
-  color: #777;
+  color: #7a6a52;
   font-size: 0.95rem;
   margin-bottom: 20px;
 }
 
 .donation-description {
-  color: #555;
+  color: #3b2f2f;
   font-size: 0.95rem;
   line-height: 1.6;
   margin-bottom: 25px;
 }
 
-/* Card Donate Button */
+/* ===== Card Donate Button ===== */
 .donate-btn {
-  background-color: #4caf50;
-  color: white;
+  background-color: #eab82e;
+  color: #fff;
   border: none;
   padding: 10px 22px;
   border-radius: 6px;
   font-size: 0.95rem;
   cursor: pointer;
+  font-weight: 600;
   transition: all 0.3s ease;
+  box-shadow: 0 3px 8px rgba(234, 184, 46, 0.3);
 }
 
 .donate-btn:hover {
-  background-color: #388e3c;
-  transform: scale(1.05);
+  background-color: #c97b2e;
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 5px 14px rgba(234, 184, 46, 0.5);
 }
 
-/* ✅ Responsive Design */
+/* ===== Responsive Design ===== */
 @media (max-width: 1024px) {
   .donation-card {
     width: 45%;
